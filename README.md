@@ -1,5 +1,5 @@
 # Chat-Box
-A very sloppy chat box
+A very sloppy chat box.
 This project was created as an introduction to network programming using sockets in python as well as an introduction to using TKinter for GUI applications. 
 
 
