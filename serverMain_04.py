@@ -1,20 +1,24 @@
 import socket
 import threading
 
-ADDR = "192.168.1.121"
+# Change addr to the ip address of your localhost, (I think ADDR = socket.gethostbyaddr() might work otherwise use something like this example - ADDR = "192.168.1.2")
+ADDR = ""
 PORT = 6666
 HEADER = 64
 FORMAT = 'utf-8'
 
+# Keep track of clients as a class (Mainly did it like this to practice with OOP, but it ended up not being so necessary) 
 class Client:
     def __init__(self, client_conn, client_address, nickname):
         self.my_client_conn = client_conn
         self.my_client_address = client_address
         self.my_nickname = nickname
 
+# Create socket object called server and bind it to an ip address and port
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server.bind((ADDR, PORT))
 
+# create a clients list and def a function to add clients and listen for messages
 clients_list = list()
 
 def handle_client(client_conn, client_addr):
@@ -49,6 +53,7 @@ def handle_client(client_conn, client_addr):
     clients_list.remove(new_client)
     client_conn.close()
 
+# To close out of the python file (It may return errors)
 def end_server():
     while True:
         stop_server = input()
@@ -60,7 +65,8 @@ def end_server():
                 print("Successfully closed one connection.")
             server.close()
             break
-            
+
+# Start the server listening for incoming client connections
 def start_server():
     server.listen()
     print(f"Server [listening] on {ADDR}:{PORT}...")
