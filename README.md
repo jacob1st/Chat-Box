@@ -1,5 +1,13 @@
 # Chat-Box
 
+
+A sample picture of a chat client.
+-
+![chat_picture](https://github.com/jacob1st/Chat-Box/blob/main/readme/chat_picture.PNG)
+
+
+The process of opening and chatting.
+-
 ![screen-gif](./readme/chat_animation.gif)
 
 Just a regular chat box.
