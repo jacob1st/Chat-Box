@@ -1,6 +1,4 @@
 # Chat-Box
-![screen-gif](./readme/Sample_gif.gif)
-
 Just a regular chat box.
 This project was created as an introduction to network programming using sockets in python as well as an introduction to using TKinter for GUI applications. 
 
