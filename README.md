@@ -1,6 +1,7 @@
 # Chat-Box
 
-
+Go check out the updated Version! ![Chat Application](https://github.com/jacob1st/Chat-Application)
+----
 A sample picture of a chat client.
 -
 ![chat_picture](https://github.com/jacob1st/Chat-Box/blob/main/readme/chat_picture.PNG)
